@@ -3,12 +3,19 @@
   <head>
     <title>Web</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
+    <ul class='navigation'>
+    <div class='navdiv'>
+      <li><a class='nav' href="#"><i class="fa fa-home"></i> Welcome</a></li>
+      <li><a class='nav' href="#"><i class="fa fa-user"></i> My Profile</a></li>
+      <li><a class='nav' href="#"><i class="fa fa-folder"></i> Projects</a></li>
+      <li><a class='nav' href="#"><i class="fa fa-briefcase"></i> Work experience</a></li>
+      <li><a class='nav' href="#"><i class="fa fa-phone"></i>Contact Me</a></li>
+    </div>
+    </ul>
     <%= yield %>
   </body>
 </html>
